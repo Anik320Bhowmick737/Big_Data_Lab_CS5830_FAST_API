@@ -19,6 +19,7 @@ def get_model(path: str):
 # Load the MNIST model
 
 model_path = "/Users/anikbhowmick/Python/Big_Data_Assignment/A06/MNIST_model.keras"
+#load the pretrained model
 model = get_model(model_path)
 # set the model in inference mode
 model.trainable=False
