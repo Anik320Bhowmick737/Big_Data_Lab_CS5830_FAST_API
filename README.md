@@ -77,6 +77,6 @@ After everything is set up in the terminal we have to write
 ```ruby
 uvicorn FastApi_implement:app --reload
 ```
-It will launch the local host on default [http://127.0.0.1:8000] port. For running this API in the webserver we used Swagger UI
+It will launch the local host on default [http://127.0.0.1:8000] port. For running this API in the webserver we used Swagger UI just use [http://127.0.0.1:8000/docs]
 
 
