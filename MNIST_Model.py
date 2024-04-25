@@ -26,8 +26,8 @@ def train_model():
     x_train=255-x_train
     x_test=255-x_test
     # flatten the datapoints to 784 dimensional vector as the model is simple ANN and expects linear data points
-    x_train = np.array(x_train).reshape(60000,-1)/255.0
-    x_test = np.array(x_test).reshape(10000,-1)/255.0
+    x_train = np.array(x_train,dtype='float32').reshape(60000,-1)/255.0
+    x_test = np.array(x_test,dtype='float32').reshape(10000,-1)/255.0
 
     model.fit(x_train,y_train, validation_split = 0.2,epochs =10)
     model.evaluate(x_test,y_test)

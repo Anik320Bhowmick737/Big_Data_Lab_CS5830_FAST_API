@@ -61,7 +61,7 @@ async def predict(file: UploadFile = File(...)):
     if image.size!=(28,28):
         # if the image is not 28 by 28 resize it 
         image = format_image(image)
-    flat = np.array(image).reshape(-1)/255.0# flatten the image and normalize in 0 to 1 scale
+    flat = np.array(image,dtype='float32').reshape(-1)/255.0# flatten the image and normalize in 0 to 1 scale
     flat = flat[None,:]
     output, c_score = predict_digit(model, flat)
     return {
