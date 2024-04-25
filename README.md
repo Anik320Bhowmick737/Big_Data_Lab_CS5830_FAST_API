@@ -78,5 +78,14 @@ After everything is set up in the terminal we have to write
 uvicorn FastApi_implement:app --reload
 ```
 It will launch the local host on default http://127.0.0.1:8000 port. For running this API in the webserver we used Swagger UI just use http://127.0.0.1:8000/docs
+## Demo with Swagger UI
+We have shown a demo of how to use the UI here. Please check out
 
+
+
+
+https://github.com/Anik320Bhowmick737/Big_Data_Lab_CS5830_FAST_API/assets/97800241/462a6dc2-1bbe-46de-a0ec-22b116e387e4
+
+
+So for all the samples the model predicted correctly. 
 
